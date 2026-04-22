@@ -1,9 +1,13 @@
-const email= document.getElementById("email");
-
-email.addEventListener("input", function(event){
-    if(email.validity.typeMusmatch){
-        email.setCustomValidity("No se recibio el dato esperado");
-    }else{
-        email.setCostumValidity("");
-    }
-})
+document.getElementById("formulario").addEventListener("submit", function(e){
+    let campos = document.querySelectorAll("#formulario input");
+    let valido = true;
+    
+    campos.forEach(espacio => {
+        if (espacio.value.trim() === "") {
+            valido = false;
+            espacio.classList.add("error");
+        } else {
+            espacio.classList.add("validado");
+        }
+    });
+});

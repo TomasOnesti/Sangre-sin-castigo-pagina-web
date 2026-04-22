@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body class="fondo">
+    <header>
+
+    </header>
+    <main>
+        <form class="glass-card" action="../php/registro.php" method="post">
+            <p class="etiqueta">Control para el juego</p>
+            <p class="etiqueta">Precio:</p>
+
+            <label class="etiqueta" for="address">Direccion: </label>
+            <input class="input" type="text" id="address" placeholder="Escriba la direccion de facturacion">
+
+            <label for="number">Cantidad</label>
+            <input class="input" type="number" id="cant" name="cantidad" placeholder="0">
+
+            <label class="etiqueta" for="card">Tarjeta: </label>
+            <input  class="input" type="text" id="card" name="card" placeholder="Escriba los numeros de su tarjeta">
+
+            <label class="etiqueta" for="cvv">CVV</label>
+            <input  class="input" type="number" id="cvv" name="cvv" placeholder="Escribe el numero de seguridad">
+
+            <p class="etiqueta">Total: </p>
+            <input class="boton" type="submit" id="boton" value="Confirmar">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

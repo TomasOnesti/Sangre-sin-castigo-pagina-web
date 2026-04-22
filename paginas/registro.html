@@ -8,24 +8,26 @@
 </head>
 <body class="fondo">
     <header>
-        <div></div>
-        <div></div>
+        <div>
+            <h1></h1>
+        </div>
     </header>
     <main>
-        <form class="glass-card" action="../php/registro.php" method="post">
+        <form class="glass-card" id="formulario" action="../php/registro.php" method="post">
             <label class="etiqueta" for="nombre">Nombre: </label>
-            <input  class="input" type="text" name="nombre" id= "nombre" placeholder="Escribe tu Nombre" required>
+            <input  class="input" type="text" name="nombre" placeholder="Escribe tu Nombre" required>
 
             <label class="etiqueta" for="email">Email: </label>
-            <input  class="input" type="email" id="email" name="email" placeholder="Escribe tu email" >
+            <input  class="input" type="email" name="email" placeholder="Escribe tu email" >
 
             <label class="etiqueta" for="password">Contraseña: </label>
-            <input  class="input" type="password" id="password" name="password" placeholder="Escribe tu Contraseña" required>
+            <input  class="input" type="password"  name="password" placeholder="Escribe tu Contraseña" required>
 
             <label class="etiqueta" for="password">Repita su contraseña: </label>
-            <input  class="input" type="password" id="ver_password" name="password" placeholder="Contraseña" required>
+            <input  class="input" type="password" name="password" placeholder="Contraseña" required>
 
-            <input class="boton" type="submit" id="boton" value="Confirmar">
+            <input class="boton" type="submit" value="Confirmar">
+            <input class="boton" type="submit" value="Iniciar Sesion">
         </form>
     </main>
     <footer>

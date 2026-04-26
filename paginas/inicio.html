@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="fondo">
@@ -12,7 +13,7 @@
         <div></div>
     </header>
     <main>
-        <form class="glass-card-init" action="../php/inicio.php" method="post">
+        <form id="formulario" class="glass-card-init" action="../php/inicio.php" method="post">
             <label class="etiqueta" for="nombre">Nombre: </label>
             <input  class="input" type="text" name="nombre" id= "nombre" placeholder="Escribe tu Nombre">
 
@@ -26,5 +27,6 @@
         <p></p>
     </footer>
     <script src="../js/validacion.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>

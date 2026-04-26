@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="fondo">
@@ -15,24 +16,25 @@
     <main>
         <form class="glass-card" id="formulario" action="../php/registro.php" method="post">
             <label class="etiqueta" for="nombre">Nombre: </label>
-            <input  class="input" type="text" name="nombre" placeholder="Escribe tu Nombre" required>
+            <input  class="input" type="text" name="nombre" placeholder="Escribe tu Nombre">
 
             <label class="etiqueta" for="email">Email: </label>
             <input  class="input" type="email" name="email" placeholder="Escribe tu email" >
 
             <label class="etiqueta" for="password">Contraseña: </label>
-            <input  class="input" type="password"  name="password" placeholder="Escribe tu Contraseña" required>
+            <input  class="input" type="password"  name="password" id="password" placeholder="Escribe tu Contraseña">
 
             <label class="etiqueta" for="password">Repita su contraseña: </label>
-            <input  class="input" type="password" name="password" placeholder="Contraseña" required>
+            <input  class="input" type="password" name="repassword" id="repassword" placeholder="Contraseña">
 
             <input class="boton" type="submit" value="Confirmar">
-            <input class="boton" type="submit" value="Iniciar Sesion">
+            <button type="button" class="boton">Iniciar Sesion</button>
         </form>
     </main>
     <footer>
         <p></p>
     </footer>
     <script src="../js/validacion.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>

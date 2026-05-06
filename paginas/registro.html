@@ -16,10 +16,10 @@
     <main>
         <form class="glass-card" id="formulario" action="../php/registro.php" method="post">
             <label class="etiqueta" for="nombre">Nombre: </label>
-            <input  class="input" type="text" name="nombre" placeholder="Escribe tu Nombre">
+            <input  class="input" type="text" id="nombre" name="nombre" placeholder="Escribe tu Nombre">
 
             <label class="etiqueta" for="email">Email: </label>
-            <input  class="input" type="email" name="email" placeholder="Escribe tu email" >
+            <input  class="input" type="email" name="email" id="email" placeholder="Escribe tu email" >
 
             <label class="etiqueta" for="password">Contraseña: </label>
             <input  class="input" type="password"  name="password" id="password" placeholder="Escribe tu Contraseña">
@@ -35,6 +35,7 @@
         <p></p>
     </footer>
     <script src="../js/validacion.js"></script>
+    <script src="../js/funciones.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
